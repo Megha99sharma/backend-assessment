@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Specifies the target JavaScript version
+    "module": "commonjs", // Use commonjs module system for Node.js compatibility
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Allow default imports from modules without a default export
+    "skipLibCheck": true, // Skip type checking of all declaration files
+    "forceConsistentCasingInFileNames": true, // Ensures file names are case-sensitive
+    "outDir": "./dist", // Output directory for compiled JavaScript files
+    "rootDir": "./src", // The root directory of the TypeScript files
+    "baseUrl": ".", // Base directory to resolve non-relative module names
+    "resolveJsonModule": true, // Allow importing JSON files as modules
+    "incremental": true, // Enable incremental compilation to speed up builds
+    "noImplicitAny": true, // Raise error on expressions and declarations with an implied `any` type
+    "moduleResolution": "node", // Module resolution strategy that mimics Node.js resolution mechanisms
+    "lib": [ "es2020" ], // Specify the libraries to include in the compilation
+    "paths": {
+      "shared-orm-lib": [ "../shared-orm-lib/src" ]
+    }
+  },
+  "include": [
+    "src/**/*.ts" // Include all TypeScript files in the src directory
+  ],
+  "exclude": [
+    "node_modules" // Exclude the node_modules directory
+  ]
+}

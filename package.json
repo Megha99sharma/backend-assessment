@@ -1,0 +1,35 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"main": "src/main.ts",
+	"scripts": {
+		"start": "nest start",
+		"start:dev": "nest start --watch",
+		"build": "nest build",
+		"lint": "eslint . --ext .ts --fix",
+		"test": "jest",
+		"test:watch": "jest --watch"
+	},
+	"dependencies": {
+		"@nestjs/common": "^9.0.0", // Core NestJS functionality
+		"@nestjs/core": "^9.0.0", // Core NestJS functionality
+		"@nestjs/platform-express": "^9.0.0", // HTTP server for Express integration
+		"@nestjs/typeorm": "^9.0.0", // TypeORM integration for NestJS
+		"pg": "^8.7.1", // PostgreSQL driver for Node.js
+		"typeorm": "^0.3.0", // ORM for database interaction
+		"shared-orm-lib": "file:../shared-orm-lib", // Link to your shared ORM library (replace with npm package if published)
+		"class-validator": "^0.13.1", // Validation library used with DTOs
+		"class-transformer": "^0.4.0", // Class transformation library for NestJS
+		"rxjs": "^7.5.0" // Reactive Extensions for JavaScript (RxJS)
+	},
+	"devDependencies": {
+		"@nestjs/cli": "^9.0.0", // NestJS CLI for development
+		"@nestjs/schematics": "^9.0.0", // NestJS schematics for scaffolding
+		"@nestjs/testing": "^9.0.0", // Testing utilities for NestJS
+		"typescript": "^4.5.5", // TypeScript for development
+		"ts-jest": "^27.1.3", // Jest preset for TypeScript
+		"jest": "^27.4.5", // JavaScript testing framework
+		"eslint": "^8.0.0", // Linter for clean code
+		"eslint-plugin-import": "^2.25.3" // ESLint plugin for import rules
+	}
+}
